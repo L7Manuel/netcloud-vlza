@@ -54,7 +54,7 @@ const ServicesSection = () => {
               presencia digital
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-foreground/85 max-w-3xl mx-auto mb-8 font-medium">
             Desde sitios web corporativos hasta aplicaciones con inteligencia artificial, tenemos 
             la solución perfecta para tu negocio.
           </p>
@@ -92,7 +92,7 @@ const ServicesSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground/75 leading-relaxed font-medium">
                   {service.description}
                 </p>
               </CardContent>

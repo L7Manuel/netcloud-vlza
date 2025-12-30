@@ -1,9 +1,9 @@
 # 🌐 NETCLOUD VLZA - Tecnología del Futuro
 
-> Sitio web corporativo moderno, optimizado y progresivo (PWA) para empresa de tecnología especializada en desarrollo web, automatizaciones IA y marketing digital. Incluye **Nubecita**, un asistente técnico inteligente para calificación de leads.
+> Sitio web corporativo moderno, optimizado y progresivo (PWA) para empresa de tecnología especializada en desarrollo web, automatizaciones IA y marketing digital.
 
 **🚀 Sitio en Producción:** https://l7manuel.github.io/netcloud-vlza/  
-**📊 Estado del Proyecto:** ✅ Fase 3 Completada + UI/UX + Nubecita AI Assistant  
+**📊 Estado del Proyecto:** ✅ Fase 3 Completada + UI/UX Optimizado  
 **💻 Última Actualización:** 20 de Octubre, 2025
 
 [![Deploy Status](https://github.com/L7Manuel/netcloud-vlza/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://github.com/L7Manuel/netcloud-vlza/actions)
@@ -120,28 +120,7 @@ npm run deploy   # Deploy a GitHub Pages (manual)
 - ✅ **3 Páginas Dedicadas** - Servicios, Nosotros, Ética
 - ✅ **Navegación Activa** - Indicadores visuales de página actual
 - ✅ **Sección "Cómo Trabajamos"** - Proceso en 4 pasos educativos
-
-### ☁️ Nubecita - Asistente Técnico IA
-- ✅ **Chatbot Conversacional** - Interfaz amigable tipo chat
-- ✅ **Calificación de Leads** - 8 preguntas estratégicas
-- ✅ **Validación Inteligente** - Email, teléfono, texto
-- ✅ **Inputs Mixtos** - Botones para opciones + texto libre
-- ✅ **Barra de Progreso** - Seguimiento visual del proceso
-- ✅ **Integración n8n** - Webhook para automatización
-- ✅ **Análisis con Gemini** - IA para análisis técnico
-- ✅ **PDF Automático** - Generación de propuestas
-- ✅ **Multi-notificación** - Email + Drive + Sheets
-- ✅ **Diseño de Marca** - Colores y gradientes NETCLOUD
-
-**Datos Capturados:**
-1. Nombre del cliente
-2. Email de contacto
-3. Número de teléfono
-4. Tipo de proyecto (6 opciones)
-5. Timeline deseado (4 opciones)
-6. Presupuesto aproximado (5 opciones)
-7. Descripción detallada
-8. Integraciones necesarias
+- ✅ **Contraste Optimizado** - Texto legible en modo claro y oscuro
 
 ### Monitoring 📊
 - ✅ **Web Vitals** - CLS, INP, FCP, LCP, TTFB
@@ -190,14 +169,6 @@ npm run deploy
 src/
 ├── components/           # Componentes React
 │   ├── ui/              # shadcn/ui components
-│   ├── Nubecita/        # ☁️ Asistente Técnico IA
-│   │   ├── index.tsx
-│   │   ├── NubecitaButton.tsx
-│   │   ├── NubecitaChat.tsx
-│   │   ├── ChatMessage.tsx
-│   │   ├── ChatInput.tsx
-│   │   ├── TypingIndicator.tsx
-│   │   └── ProgressBar.tsx
 │   ├── Header.tsx
 │   ├── Footer.tsx
 │   ├── ProcessSection.tsx
@@ -208,14 +179,11 @@ src/
 │   ├── NosotrosPage.tsx
 │   └── EticaPage.tsx
 ├── hooks/               # Custom hooks
-│   ├── useNubecita.ts   # Lógica del chatbot
 │   ├── useScrollReveal.ts
 │   ├── useWebVitals.ts
 │   └── ...
 ├── types/               # TypeScript types
-│   └── nubecita.ts
 ├── utils/               # Utilidades
-│   └── chatFlow.ts      # Flujo conversacional
 ├── lib/                 # Helpers
 └── App.tsx
 
@@ -240,33 +208,10 @@ VITE_CONTACT_EMAIL=contacto@netcloud.com
 VITE_CONTACT_PHONE=+58 412-1234567
 VITE_CONTACT_ADDRESS=San Diego, Carabobo, Venezuela
 
-# Nubecita - Webhook n8n
-VITE_NUBECITA_WEBHOOK_URL=https://your-n8n-instance.com/webhook/chat-lead-webhook
+# API (si aplica en el futuro)
+VITE_API_URL=https://api.netcloud.com
 ```
 
-### Configurar Nubecita con n8n
-
-**Guía completa de deployment:** 📚 [NUBECITA_DEPLOYMENT.md](./NUBECITA_DEPLOYMENT.md)
-
-**Quick Start:**
-
-1. **Importa el workflow** en n8n (JSON incluido en documentación)
-2. **Configura las credenciales:**
-   - Google Gemini API
-   - Google Drive OAuth2
-   - Email SMTP
-   - Google Sheets
-3. **Elige tu escenario de deployment:**
-   - 🏠 **Semi-Automático** (Gratis, PC encendida) - Ideal para testing
-   - 🌐 **VPS 24/7** ($5-10/mes) - Ideal para producción
-   - ☁️ **n8n.cloud** (Gratis/Pago) - Ideal para escalado
-4. **Obtén la URL del webhook** según tu escenario
-5. **Agrega la URL** a tu archivo `.env`
-6. **Descomenta el código** en `src/hooks/useNubecita.ts` (líneas 127-131)
-
-Ver guía detallada con instalación de ngrok, scripts y troubleshooting en [NUBECITA_DEPLOYMENT.md](./NUBECITA_DEPLOYMENT.md)
-
----
 
 ## 🐛 Troubleshooting
 
@@ -304,17 +249,17 @@ npx tsc --noEmit
 
 ## 📊 Métricas de Performance
 
-### Bundle Size (Actualizado con Nubecita)
+### Bundle Size (Optimizado)
 | Archivo | Tamaño | Gzip | Descripción |
 |---------|---------|------|-------------|
 | **vendor-react.js** | 330.87 KB | 101.55 KB | React, React DOM, Router |
 | **vendor-ui.js** | 88.74 KB | 30.07 KB | Radix UI components |
 | **vendor-query.js** | 27.34 KB | 8.19 KB | TanStack Query |
 | **vendor-icons.js** | 9.56 KB | 3.90 KB | Lucide React |
-| **index.js** | 232.08 KB | 50.66 KB | App code + Nubecita |
-| **CSS** | 84.69 KB | 13.86 KB | Tailwind + Nubecita styles |
-| **Total JS** | ~707 KB | ~204 KB | 11 chunks |
-| **PWA Precache** | 1242.73 KiB | - | 20 archivos |
+| **index.js** | 180.00 KB | 45.00 KB | App code optimizado |
+| **CSS** | 73.10 KB | 12.53 KB | Tailwind CSS optimizado |
+| **Total JS** | ~636 KB | ~189 KB | 11 chunks |
+| **PWA Precache** | 1200.00 KiB | - | 18 archivos |
 
 ### Optimizaciones Logradas
 - ✅ **-45.6%** en vendor-icons (14 KB → 7.62 KB)

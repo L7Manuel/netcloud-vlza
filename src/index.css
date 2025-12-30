@@ -32,19 +32,19 @@
     --popover-foreground: 222.2 84% 4.9%;
 
     /* Primary Brand Colors */
-    --primary: 214 100% 50%;
+    --primary: 214 100% 45%;
     --primary-foreground: 210 40% 98%;
 
     /* Secondary Colors */
     --secondary: 262 83% 58%;
     --secondary-foreground: 210 40% 98%;
 
-    /* Neutral Colors */
+    /* Neutral Colors - Mejor contraste */
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 215.4 16.3% 35%; /* Más oscuro para mejor legibilidad */
 
     /* Accent Colors */
-    --accent: 180 100% 40%;
+    --accent: 180 100% 35%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     /* Status Colors */
@@ -94,13 +94,13 @@
     --card-foreground: 210 40% 98%;
     --popover: 220 25% 12%;
     --popover-foreground: 210 40% 98%;
-    --primary: 214 100% 60%;
+    --primary: 214 100% 55%;
     --primary-foreground: 220 27% 8%;
     --secondary: 262 83% 58%;
     --secondary-foreground: 210 40% 98%;
     --muted: 220 20% 20%;
-    --muted-foreground: 220 15% 65%;
-    --accent: 180 100% 70%;
+    --muted-foreground: 220 15% 75%; /* Más brillante para mejor legibilidad */
+    --accent: 180 100% 65%;
     --accent-foreground: 220 27% 8%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
