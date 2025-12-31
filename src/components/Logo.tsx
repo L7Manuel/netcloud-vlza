@@ -8,6 +8,8 @@ interface LogoProps {
 const Logo = ({ className }: LogoProps) => {
   const navigate = useNavigate();
 
+  const logoSrc = `${import.meta.env.BASE_URL}logo-netcloud-new.png`;
+
   const handleLogoClick = () => {
     navigate("/");
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -20,7 +22,7 @@ const Logo = ({ className }: LogoProps) => {
       aria-label="NETCLOUD - Ir al inicio"
     >
       <img 
-        src="/logo-netcloud-new.png" 
+        src={logoSrc} 
         alt="NETCLOUD Logo" 
         className="h-10 w-auto"
         onError={(e) => {

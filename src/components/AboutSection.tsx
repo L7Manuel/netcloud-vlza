@@ -1,17 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection = () => {
+  const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
   const team = [
     {
       name: "Michael Rengifo",
       role: "Fundador & CEO",
-      image: "/ceo-profile-1.jpg",
+      image: asset("/ceo-profile-1.jpg"),
       expertise: "Diseño Gráfico & UX/UI"
     },
     {
       name: "Lermit Sánchez",
       role: "Fundador & CEO", 
-      image: "/ceo-profile-2.jpg",
+      image: asset("/ceo-profile-2.jpg"),
       expertise: "Growth Marketing & Estrategia Digital"
     }
   ];
