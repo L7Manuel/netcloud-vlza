@@ -116,12 +116,12 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 animate-in slide-in-from-top duration-200">
-            <div className="flex flex-col space-y-4">
+          <nav className="md:hidden mt-2 pb-4 animate-in slide-in-from-top duration-200">
+            <div className="flex flex-col space-y-2">
               <Link
                 to="/servicios"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-foreground hover:text-primary transition-colors text-left py-2 px-4 rounded-lg hover:bg-card/50 ${
+                className={`text-foreground hover:text-primary transition-colors text-left py-3 px-4 rounded-lg hover:bg-card/50 text-lg ${
                   isActive('/servicios') ? 'bg-card/50 text-primary' : ''
                 }`}
                 aria-label="Ver servicios"
@@ -131,7 +131,7 @@ const Header = () => {
               <Link
                 to="/nosotros"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-foreground hover:text-primary transition-colors text-left py-2 px-4 rounded-lg hover:bg-card/50 ${
+                className={`text-foreground hover:text-primary transition-colors text-left py-3 px-4 rounded-lg hover:bg-card/50 text-lg ${
                   isActive('/nosotros') ? 'bg-card/50 text-primary' : ''
                 }`}
                 aria-label="Conocer sobre nosotros"
@@ -141,7 +141,7 @@ const Header = () => {
               <Link
                 to="/etica"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-foreground hover:text-primary transition-colors text-left py-2 px-4 rounded-lg hover:bg-card/50 ${
+                className={`text-foreground hover:text-primary transition-colors text-left py-3 px-4 rounded-lg hover:bg-card/50 text-lg ${
                   isActive('/etica') ? 'bg-card/50 text-primary' : ''
                 }`}
                 aria-label="Ver principios éticos"

@@ -1,14 +1,26 @@
 import { cn } from "@/lib/utils";
+import { useNavigate } from "react-router-dom";
 
 interface LogoProps {
   className?: string;
 }
 
 const Logo = ({ className }: LogoProps) => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div className={cn("flex items-center", className)}>
+    <button
+      onClick={handleLogoClick}
+      className={cn("flex items-center hover:opacity-80 transition-opacity duration-200", className)}
+      aria-label="NETCLOUD - Ir al inicio"
+    >
       <img 
-        src="/netcloud-digital-haven/logo.png" 
+        src="/logo-netcloud-new.png" 
         alt="NETCLOUD Logo" 
         className="h-10 w-auto"
         onError={(e) => {
@@ -21,7 +33,7 @@ const Logo = ({ className }: LogoProps) => {
           target.parentNode?.insertBefore(textLogo, target.nextSibling);
         }}
       />
-    </div>
+    </button>
   );
 };
 

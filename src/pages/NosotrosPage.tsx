@@ -23,7 +23,7 @@ const NosotrosPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6 bg-gradient-to-b from-secondary/5 via-background to-background">
+      <section className="relative pt-32 pb-6 px-6 bg-gradient-to-b from-secondary/5 via-background to-background">
         <div className="container mx-auto max-w-7xl">
           {/* Back Button */}
           <Link to="/">
@@ -34,7 +34,7 @@ const NosotrosPage = () => {
           </Link>
 
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="bg-tech-gradient bg-clip-text text-transparent">
                 Sobre Nosotros
@@ -49,41 +49,10 @@ const NosotrosPage = () => {
       </section>
 
       {/* About Content */}
-      <section className="py-12 px-6">
+      <section className="py-2 px-6">
         <Suspense fallback={<AboutSectionSkeleton />}>
           <AboutSection />
         </Suspense>
-      </section>
-
-      {/* Mission & Vision */}
-      <section className="py-20 px-6 bg-gradient-to-b from-background to-secondary/5">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Mission */}
-            <div className="text-center md:text-left">
-              <h2 className="text-3xl font-bold mb-4 text-primary">
-                Nuestra Misión
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Empoderar a empresas y emprendedores con soluciones tecnológicas innovadoras, 
-                accesibles y éticas que impulsen su crecimiento y generen un impacto positivo 
-                en la sociedad.
-              </p>
-            </div>
-
-            {/* Vision */}
-            <div className="text-center md:text-left">
-              <h2 className="text-3xl font-bold mb-4 text-secondary">
-                Nuestra Visión
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Ser la empresa líder en soluciones tecnológicas en Venezuela y Latinoamérica, 
-                reconocida por nuestra excelencia técnica, compromiso ético y capacidad de 
-                transformar ideas en realidades digitales exitosas.
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* CTA Section */}

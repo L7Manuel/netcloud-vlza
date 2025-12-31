@@ -96,7 +96,7 @@ const Index = () => {
           </h1>
 
           <div className="max-w-4xl mx-auto">
-            <p className="text-2xl md:text-3xl lg:text-4xl text-foreground/95 mb-10 leading-tight font-semibold">
+            <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-foreground/95 mb-8 md:mb-10 leading-tight font-semibold">
               Innovación tecnológica y estrategias de marketing de crecimiento para generar 
               <span className="text-primary font-bold"> impacto positivo</span> en las personas, 
               guiados por principios cristianos de 

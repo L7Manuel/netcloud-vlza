@@ -72,7 +72,7 @@ const ServicesSection = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
           {services
             .filter((service) =>
               service.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -83,16 +83,16 @@ const ServicesSection = () => {
               key={index} 
               className="group hover:shadow-glow-primary transition-all duration-300 hover:scale-105 border-border bg-card/50 backdrop-blur-sm"
             >
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-tech-gradient rounded-lg flex items-center justify-center shadow-glow-primary group-hover:shadow-glow-secondary transition-all duration-300">
-                  <service.icon className="w-8 h-8 text-background" />
+              <CardHeader className="text-center p-4 md:p-6">
+                <div className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 bg-tech-gradient rounded-lg flex items-center justify-center shadow-glow-primary group-hover:shadow-glow-secondary transition-all duration-300">
+                  <service.icon className="w-6 h-6 md:w-8 md:h-8 text-background" />
                 </div>
-                <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                <CardTitle className="text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                   {service.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-foreground/75 leading-relaxed font-medium">
+              <CardContent className="p-4 md:p-6 pt-0">
+                <p className="text-sm md:text-base text-foreground/75 leading-relaxed font-medium">
                   {service.description}
                 </p>
               </CardContent>
