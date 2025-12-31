@@ -3,7 +3,6 @@ import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ContactForm from "@/components/ContactForm";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ProcessSection from "@/components/ProcessSection";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -119,11 +118,6 @@ const Index = () => {
 
       {/* Floating Action Buttons */}
       <WhatsAppButton />
-      
-      {/* Contact Form Modal - Positioned in footer for easy access */}
-      <div className="fixed bottom-8 left-8 z-40 hidden md:block">
-        <ContactForm />
-      </div>
 
       {/* Floating Back to Top Button */}
       {showBackToTop && (

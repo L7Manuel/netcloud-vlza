@@ -3,7 +3,6 @@ import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ContactForm from "@/components/ContactForm";
 import { ServicesSectionSkeleton } from "@/components/SkeletonLoaders";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -65,7 +64,6 @@ const ServiciosPage = () => {
             Contáctanos hoy y descubre cómo podemos ayudarte a alcanzar tus objetivos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <ContactForm />
             <Link to="/">
               <Button variant="outline" size="lg">
                 Conocer Más Sobre Nosotros

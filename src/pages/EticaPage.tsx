@@ -3,7 +3,6 @@ import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ContactForm from "@/components/ContactForm";
 import { EthicsSectionSkeleton } from "@/components/SkeletonLoaders";
 import { ArrowLeft, Heart, Shield, Star, Users } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -170,7 +169,6 @@ const EticaPage = () => {
             Nuestros valores no son solo palabras, son el fundamento de cada proyecto.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <ContactForm />
             <Link to="/servicios">
               <Button variant="outline" size="lg">
                 Conocer Nuestros Servicios
